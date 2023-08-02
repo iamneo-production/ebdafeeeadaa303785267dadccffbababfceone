@@ -11,14 +11,14 @@ import com.examly.springapp.model.Village;
 @Repository
 public interface VillageRepo extends JpaRepository<Village , Integer>{
 
-    @Query(value = "SELECT * FROM  Village u  WHERE u.village_id = ?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM  village u  WHERE u.village_id = ?1", nativeQuery = true)
     public Village findbyId(int villageId);
 
-    @Query(value = "SELECT * FROM  Village u WHERE u.village_name = ?1", nativeQuery = true)
-    public Village findbyName (String villageName);
+    @Query(value = "SELECT * FROM  village u WHERE u.village_name = ?1", nativeQuery = true)
+    public Village findbyName(String villageName);
 
     @Query(value = "SELECT * FROM  village u WHERE u.village_population = ?1", nativeQuery = true)
-    public Village findbypop (int villagePopulation);
+    public Village findbypop(int villagePopulation);
 
     @Query(value = "SELECT * FROM  village u WHERE u.num_of_men = ?1 AND u.num_of_women = ?2", nativeQuery = true)
     public List<Village> findMW(int numOfMen, int numOfWomen);
