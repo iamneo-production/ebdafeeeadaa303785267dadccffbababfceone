@@ -1,22 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 8.196 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-getbyid  Time elapsed: 0.027 s  <<< FAILURE!
-java.lang.AssertionError: 
-Expected an array at JSON path "$" but found: {villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}
-Expected: an instance of java.util.List
-     but: <{villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}> is a java.util.LinkedHashMap
+Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 7.894 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+getbyid  Time elapsed: 0.066 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$"
+	at com.examly.springapp.SpringappApplicationTests.getbyid(SpringappApplicationTests.java:50)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
 	at com.examly.springapp.SpringappApplicationTests.getbyid(SpringappApplicationTests.java:50)
 
-getbyname  Time elapsed: 0.04 s  <<< FAILURE!
+getbyname  Time elapsed: 0.044 s  <<< FAILURE!
 java.lang.AssertionError: 
 Expected an array at JSON path "$" but found: {villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}
 Expected: an instance of java.util.List
      but: <{villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}> is a java.util.LinkedHashMap
 	at com.examly.springapp.SpringappApplicationTests.getbyname(SpringappApplicationTests.java:70)
 
-getbypop  Time elapsed: 0.015 s  <<< FAILURE!
+getbypop  Time elapsed: 0.021 s  <<< FAILURE!
 java.lang.AssertionError: 
 Expected an array at JSON path "$" but found: {villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}
 Expected: an instance of java.util.List
