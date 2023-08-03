@@ -1,24 +1,56 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 7.894 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-getbyid  Time elapsed: 0.066 s  <<< FAILURE!
-java.lang.AssertionError: No value at JSON path "$"
-	at com.examly.springapp.SpringappApplicationTests.getbyid(SpringappApplicationTests.java:50)
-Caused by: java.lang.IllegalArgumentException: json can not be null or empty
-	at com.examly.springapp.SpringappApplicationTests.getbyid(SpringappApplicationTests.java:50)
+Tests run: 13, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 7.129 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+testrepositoryfolder  Time elapsed: 0.35 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testrepositoryfolder(SpringappApplicationTests.java:141)
 
-getbyname  Time elapsed: 0.044 s  <<< FAILURE!
-java.lang.AssertionError: 
-Expected an array at JSON path "$" but found: {villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}
-Expected: an instance of java.util.List
-     but: <{villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}> is a java.util.LinkedHashMap
-	at com.examly.springapp.SpringappApplicationTests.getbyname(SpringappApplicationTests.java:70)
+testModelFile  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testModelFile(SpringappApplicationTests.java:129)
 
-getbypop  Time elapsed: 0.021 s  <<< FAILURE!
-java.lang.AssertionError: 
-Expected an array at JSON path "$" but found: {villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}
-Expected: an instance of java.util.List
-     but: <{villageId=100, villageName=kanpur, numOfMen=30, numOfWomen=20, villagePopulation=50, numOfSchools=5}> is a java.util.LinkedHashMap
-	at com.examly.springapp.SpringappApplicationTests.getbypop(SpringappApplicationTests.java:60)
+testModelFolder  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testModelFolder(SpringappApplicationTests.java:117)
+
+testServiceFolder  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testServiceFolder(SpringappApplicationTests.java:168)
+
+testrepositoryFile  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testrepositoryFile(SpringappApplicationTests.java:155)
+
+getbyMW  Time elapsed: 0.174 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.getbyMW(SpringappApplicationTests.java:79)
+
+getbyid  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.getbyid(SpringappApplicationTests.java:49)
+
+add  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.add(SpringappApplicationTests.java:37)
+
+controllerfolder  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.controllerfolder(SpringappApplicationTests.java:92)
+
+getbyname  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.getbyname(SpringappApplicationTests.java:69)
+
+testServieFile  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testServieFile(SpringappApplicationTests.java:182)
+
+controllerfile  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.controllerfile(SpringappApplicationTests.java:104)
+
+getbypop  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.getbypop(SpringappApplicationTests.java:59)
 
